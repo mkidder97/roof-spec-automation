@@ -1,0 +1,50 @@
+{
+  "name": "roof-spec-automation",
+  "version": "1.0.0",
+  "description": "AI-powered roof specification automation system with nationwide coverage, ASCE 7 wind calculations, and professional PDF generation. Reduces SOW creation time from hours to seconds.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/test-runner.js",
+    "test-nationwide": "node tests/nationwide-test-suite.js",
+    "dev": "node --watch src/index.js",
+    "validate": "node validate-nationwide.js",
+    "demo": "node demo-nationwide.js",
+    "production-test": "node production-test.js"
+  },
+  "keywords": [
+    "roofing",
+    "nationwide",
+    "NOA",
+    "ASCE",
+    "wind-load",
+    "specifications",
+    "building-codes",
+    "api-integration",
+    "automation",
+    "pdf-generation"
+  ],
+  "author": "mkidder97",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mkidder97/roof-spec-automation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkidder97/roof-spec-automation/issues"
+  },
+  "homepage": "https://github.com/mkidder97/roof-spec-automation#readme"
+}
